@@ -7,5 +7,57 @@
 </head>
 <body>
     
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="dispay-container">
+            <input readonly placeholder="Password" class="dispay" data-passwordDisplay>
+            
+            <button>
+                <span data-copyMsg></span>
+                <img src="./assets/copy.svg" alt="copy" width="23" height="23">
+            </button>
+        </div>
+
+        <div class="input-container">
+            <div class="length-container">
+                <p>Password Length</p>
+                <p data-lengthNumber>0</p>
+            </div>
+
+            <!-- slider  -->
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+            <!-- Checkboxes -->
+             <div>
+                <input type="checkbox" name="" id="uppercase">
+                <label for="uppercase">Includes Uppercase letters</label>
+             </div>
+             <div>
+                <input type="checkbox" name="" id="lowercase">
+                <label for="lowercase">Includes Lowercase letters</label>
+             </div>
+             <div>
+                <input type="checkbox" name="" id="numbers">
+                <label for="numbers">Includes Numbers</label>
+             </div>
+             <div>
+                <input type="checkbox" name="" id="symbols">
+                <label for="symbols">Includes Symbols</label>
+             </div>
+
+             <!-- strength section  -->
+              <div class="strength-container">
+                <p>Strength</p>
+                <div data-indicator></div>
+              </div>
+              
+              <!-- Generator Password  -->
+               <button class="generate-password">Generator Password</button>
+        </div>
+
+
+    </div>
+
 </body>
 </html>
