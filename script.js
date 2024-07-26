@@ -151,7 +151,8 @@ generateBtn.addEventListener('click', () => {
 
   //remove old password
   password = "";
-  console.log("journey done");
+  //   console.log("journey done");
+
   //let's put the stuff mentioned by checkboxes
 //   if(uppercaseCheck.checked){
 //     password = generateUpperCase();
@@ -188,7 +189,7 @@ generateBtn.addEventListener('click', () => {
     for (let i = 0; i < funArr.length; i++) {
         password += funArr[i]();
     }
-  console.log("compulsory addition done");
+    // console.log("compulsory addition done");
 
     for (let i = 0; i< passwordLength-funArr.length; i++){
         let randIndex = getRndInteger(0,funArr.length);
@@ -197,15 +198,15 @@ generateBtn.addEventListener('click', () => {
 
     //shuffle the password
     password = shufflePassword(Array.from(password));
-    console.log("shuffle done");
+    // console.log("shuffle done");
 
     // show in UI
     passwordDisplay.value = password;
-    console.log("showing on UI done");
+    // console.log("showing on UI done");
 
     //calculating strength
     calcStrength();
-    console.log("strength calculation done");
+    // console.log("strength calculation done");
     
 
 })
